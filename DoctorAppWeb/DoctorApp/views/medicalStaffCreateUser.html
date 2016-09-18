@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+    <title>PatientLink - Dashboard</title>
+</head>
+<body>
+    <nav class="navbar background-color-blue">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="medicalStaffDashboard">
+                    <img src="images/icon-pill.png" alt="">
+                </a>
+                <ul class="nav navbar-nav">
+                    <li><p class="h3 font-white" href="medicalStaffDashboard">Patient<strong>Link</strong></p></li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav center-staff-nav">
+                <li class="active"><a href="/medicalStaffCreateUser"><p class="h4 font-white">Create User</p></a></li>
+            </ul>
+            <a class="navbar-brand pull-right" href="/">
+                <img src="images/icon-logout.png" alt="">
+            </a>
+            <p class="h3 pull-right font-white padding-right"><strong>wilr.stephens@gmail.com</strong></p>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4" style="padding-top:200px">
+            <p class="h1 text-center">Create User</p>
+        </div>
+    </div>
+    <form action="/createUser" method="post">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4" style="padding-top:25px">
+                <p class="h4"><strong>EMAIL</strong></p>
+                <input type="text" class="form-control" name="email" />
+                <p class="h4"><strong>TEMPORARY PASSWORD</strong></p>
+                <input type="text" class="form-control" name="temporaryPassword" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4" style="padding-top:25px">
+                <input type="submit" class="btn btn-default btn-lg btn-block background-color-blue font-white" value="Create User">
+            </div>
+        </div>
+    </form>
+</body>
+</html>

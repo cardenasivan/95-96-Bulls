@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+    <title>PatientLink - Dashboard</title>
+</head>
+<body>
+    <nav class="navbar background-color-blue">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="patientDashboard">
+                    <img src="images/icon-pill.png" alt="">
+                </a>
+                <ul class="nav navbar-nav">
+                    <li><p class="h3 font-white" href="dashboard">Patient<strong>Link</strong></p></li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav center-nav">
+                <li><a href="/patientRegistration"><p class="h4 font-white">Patient Registration</p></a></li>
+                <li><a href="#"><p class="h4 font-white">Appointment Scheduler</p></a></li>
+                <li><a href="#"><p class="h4 font-white">Prescription Manager</p></a></li>
+            </ul>
+            <a class="navbar-brand pull-right" href="/">
+                <img src="images/icon-logout.png" alt="">
+            </a>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4" style="padding-top:50px">
+            <p class="h1 text-center">Patient Registered Successfully!</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4" style="padding-top:25px">
+            <a href="/patientRegistration" class="btn btn-default btn-lg btn-block background-color-blue font-white">Create Another User</a>
+        </div>
+    </div>
+</body>
+</html>

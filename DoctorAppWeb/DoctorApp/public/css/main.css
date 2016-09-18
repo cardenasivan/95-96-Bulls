@@ -1,0 +1,19 @@
+﻿.color-blue {
+    color: #208fce
+}
+
+.background-color-blue {
+    background-color: #208fce
+}
+
+.font-white {
+    color: white;
+}
+
+.padding-right {
+    padding-right:25px
+}
+
+.navbar-nav>li>a>p:hover{
+    color: #208fce;
+}

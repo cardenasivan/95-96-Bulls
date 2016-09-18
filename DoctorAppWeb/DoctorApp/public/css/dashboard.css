@@ -1,0 +1,21 @@
+﻿.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  width: auto;
+}
+
+.icon-text {
+    font-size: 40px
+}
+
+.center-nav {
+    padding-left: 28%;
+}
+
+.center-staff-nav {
+    padding-left: 39%
+}
+

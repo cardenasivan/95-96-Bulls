@@ -1,0 +1,16 @@
+{
+  "name": "doctor-app",
+  "version": "0.0.0",
+  "description": "DoctorApp",
+  "main": "server.js",
+  "author": {
+    "name": "wil.stephens"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "firebase": "^3.4.0",
+    "nodemailer": "^2.6.0",
+    "request": "^2.75.0"
+  }
+}
