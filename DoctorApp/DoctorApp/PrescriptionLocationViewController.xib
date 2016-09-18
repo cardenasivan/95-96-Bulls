@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrescriptionLocationViewController">
+            <connections>
+                <outlet property="appointmentImageView" destination="xtj-6f-jGb" id="heb-T7-Z8r"/>
+                <outlet property="homeImageView" destination="L6i-nl-8Ti" id="dqo-eW-cdG"/>
+                <outlet property="mapView" destination="eyW-zR-Fps" id="Uzg-ZZ-8Du"/>
+                <outlet property="prescriptionImageView" destination="vtl-R2-0NH" id="EvT-AQ-8SW"/>
+                <outlet property="profileImageView" destination="G3H-dC-gZv" id="hFl-il-ctv"/>
+                <outlet property="tableView" destination="zEA-Wc-YCU" id="dzC-3r-XEe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top-nav-presc.png" translatesAutoresizingMaskIntoConstraints="NO" id="SPF-cq-ubH"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-settings.png" translatesAutoresizingMaskIntoConstraints="NO" id="na4-MB-IBk">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="Yva-uz-xPR"/>
+                        <constraint firstAttribute="width" constant="24" id="zdH-U4-2ca"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zEA-Wc-YCU">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="189" id="yXN-lW-Eso"/>
+                    </constraints>
+                </tableView>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eyW-zR-Fps">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="343" id="5GY-cO-xZL"/>
+                    </constraints>
+                </mapView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-appt.png" translatesAutoresizingMaskIntoConstraints="NO" id="gLf-a7-hsv">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="9WJ-Xt-oda"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-home.png" translatesAutoresizingMaskIntoConstraints="NO" id="p17-qn-qug">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="6qY-Ta-bbW"/>
+                        <constraint firstAttribute="width" constant="94" id="tv2-lF-EVy"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-presc.png" translatesAutoresizingMaskIntoConstraints="NO" id="NFy-Q1-ERy">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="B2K-o3-AMr"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top-nav-dash.png" translatesAutoresizingMaskIntoConstraints="NO" id="VCF-ha-qtP">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="mQs-fn-nG4"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyd-j9-yyv">
+                    <state key="normal" backgroundImage="icon-settings.png"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottom-nav-stripe.png" translatesAutoresizingMaskIntoConstraints="NO" id="S9v-TA-6ug"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-profile.png" translatesAutoresizingMaskIntoConstraints="NO" id="G3H-dC-gZv">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="yY3-AE-UsR"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-appt.png" translatesAutoresizingMaskIntoConstraints="NO" id="xtj-6f-jGb"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-presc.png" translatesAutoresizingMaskIntoConstraints="NO" id="vtl-R2-0NH"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-home.png" translatesAutoresizingMaskIntoConstraints="NO" id="L6i-nl-8Ti">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="S2E-5E-aAw"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SPF-cq-ubH" firstAttribute="trailing" secondItem="VCF-ha-qtP" secondAttribute="trailing" id="1OG-dX-4Bl"/>
+                <constraint firstItem="na4-MB-IBk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="31" id="2ll-oD-2Jb"/>
+                <constraint firstItem="SPF-cq-ubH" firstAttribute="trailing" secondItem="eyW-zR-Fps" secondAttribute="trailing" id="42E-si-VQa"/>
+                <constraint firstAttribute="trailing" secondItem="na4-MB-IBk" secondAttribute="trailing" constant="13" id="4DI-ei-es1"/>
+                <constraint firstItem="SPF-cq-ubH" firstAttribute="leading" secondItem="VCF-ha-qtP" secondAttribute="leading" id="4wU-HU-Cra"/>
+                <constraint firstItem="NFy-Q1-ERy" firstAttribute="leading" secondItem="L6i-nl-8Ti" secondAttribute="trailing" constant="67" id="6Os-yd-jV5"/>
+                <constraint firstAttribute="trailing" secondItem="SPF-cq-ubH" secondAttribute="trailing" id="6Xf-ui-JD3"/>
+                <constraint firstItem="xtj-6f-jGb" firstAttribute="top" secondItem="vtl-R2-0NH" secondAttribute="top" id="7iF-qo-OGw"/>
+                <constraint firstItem="eyW-zR-Fps" firstAttribute="trailing" secondItem="zEA-Wc-YCU" secondAttribute="trailing" id="9eR-QQ-pNA"/>
+                <constraint firstItem="eyW-zR-Fps" firstAttribute="top" secondItem="na4-MB-IBk" secondAttribute="bottom" constant="9" id="BJa-cn-Zoj"/>
+                <constraint firstItem="SPF-cq-ubH" firstAttribute="leading" secondItem="eyW-zR-Fps" secondAttribute="leading" id="C2g-Bd-uN6"/>
+                <constraint firstItem="S9v-TA-6ug" firstAttribute="leading" secondItem="p17-qn-qug" secondAttribute="trailing" constant="22" id="E5q-YB-BFN"/>
+                <constraint firstItem="xtj-6f-jGb" firstAttribute="leading" secondItem="gLf-a7-hsv" secondAttribute="trailing" constant="18" id="EIr-Hm-A7n"/>
+                <constraint firstAttribute="bottom" secondItem="gLf-a7-hsv" secondAttribute="bottom" constant="24" id="HU6-a5-hNn"/>
+                <constraint firstItem="na4-MB-IBk" firstAttribute="top" secondItem="qyd-j9-yyv" secondAttribute="top" id="KD3-mQ-Ucy"/>
+                <constraint firstItem="SPF-cq-ubH" firstAttribute="top" secondItem="VCF-ha-qtP" secondAttribute="top" id="LOd-az-9xw"/>
+                <constraint firstItem="G3H-dC-gZv" firstAttribute="bottom" secondItem="xtj-6f-jGb" secondAttribute="bottom" id="Ndx-fG-nQD"/>
+                <constraint firstItem="L6i-nl-8Ti" firstAttribute="top" secondItem="zEA-Wc-YCU" secondAttribute="bottom" constant="37" id="PlT-c7-6us"/>
+                <constraint firstItem="VCF-ha-qtP" firstAttribute="bottom" secondItem="SPF-cq-ubH" secondAttribute="bottom" id="QR2-Pe-eeT"/>
+                <constraint firstItem="zEA-Wc-YCU" firstAttribute="leading" secondItem="L6i-nl-8Ti" secondAttribute="leading" id="QnJ-QH-271"/>
+                <constraint firstItem="vtl-R2-0NH" firstAttribute="leading" secondItem="NFy-Q1-ERy" secondAttribute="trailing" constant="26" id="UNT-9Q-LDb"/>
+                <constraint firstItem="gLf-a7-hsv" firstAttribute="top" secondItem="zEA-Wc-YCU" secondAttribute="bottom" constant="23" id="UVC-Sy-9q1"/>
+                <constraint firstItem="na4-MB-IBk" firstAttribute="trailing" secondItem="qyd-j9-yyv" secondAttribute="trailing" id="V0o-Tp-7MG"/>
+                <constraint firstItem="zEA-Wc-YCU" firstAttribute="trailing" secondItem="vtl-R2-0NH" secondAttribute="trailing" id="V1s-dw-Yh5"/>
+                <constraint firstItem="p17-qn-qug" firstAttribute="centerY" secondItem="gLf-a7-hsv" secondAttribute="centerY" id="ViU-kh-CSg"/>
+                <constraint firstItem="VCF-ha-qtP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XKV-SO-BZT"/>
+                <constraint firstItem="gLf-a7-hsv" firstAttribute="bottom" secondItem="NFy-Q1-ERy" secondAttribute="bottom" id="ZpE-bI-98O"/>
+                <constraint firstItem="L6i-nl-8Ti" firstAttribute="bottom" secondItem="G3H-dC-gZv" secondAttribute="bottom" id="acp-yj-b71"/>
+                <constraint firstItem="S9v-TA-6ug" firstAttribute="centerY" secondItem="xtj-6f-jGb" secondAttribute="centerY" id="anU-Rt-8qW"/>
+                <constraint firstAttribute="bottom" secondItem="p17-qn-qug" secondAttribute="bottom" constant="25" id="bzr-4m-UVy"/>
+                <constraint firstItem="xtj-6f-jGb" firstAttribute="bottom" secondItem="vtl-R2-0NH" secondAttribute="bottom" id="d0K-4V-B4J"/>
+                <constraint firstItem="gLf-a7-hsv" firstAttribute="leading" secondItem="p17-qn-qug" secondAttribute="trailing" constant="90" id="fUc-Zz-7cm"/>
+                <constraint firstItem="VCF-ha-qtP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="h1F-sX-dRb"/>
+                <constraint firstItem="vtl-R2-0NH" firstAttribute="leading" secondItem="xtj-6f-jGb" secondAttribute="trailing" constant="7" id="kyT-5j-1c2"/>
+                <constraint firstItem="eyW-zR-Fps" firstAttribute="leading" secondItem="zEA-Wc-YCU" secondAttribute="leading" id="lYh-fL-J7P"/>
+                <constraint firstItem="gLf-a7-hsv" firstAttribute="top" secondItem="NFy-Q1-ERy" secondAttribute="top" id="oVU-82-DmL"/>
+                <constraint firstItem="G3H-dC-gZv" firstAttribute="top" secondItem="xtj-6f-jGb" secondAttribute="top" id="qL0-6w-eG7"/>
+                <constraint firstItem="L6i-nl-8Ti" firstAttribute="top" secondItem="G3H-dC-gZv" secondAttribute="top" id="roa-d1-u9I"/>
+                <constraint firstItem="S9v-TA-6ug" firstAttribute="trailing" secondItem="vtl-R2-0NH" secondAttribute="trailing" id="tbr-a3-T0A"/>
+                <constraint firstItem="G3H-dC-gZv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="87" id="v8c-29-HUY"/>
+                <constraint firstItem="S9v-TA-6ug" firstAttribute="top" secondItem="zEA-Wc-YCU" secondAttribute="bottom" constant="25" id="vVa-Xb-48N"/>
+                <constraint firstItem="qyd-j9-yyv" firstAttribute="bottom" secondItem="na4-MB-IBk" secondAttribute="bottom" id="w2A-wq-rOC"/>
+                <constraint firstItem="S9v-TA-6ug" firstAttribute="leading" secondItem="L6i-nl-8Ti" secondAttribute="leading" id="wUY-dL-yXb"/>
+                <constraint firstItem="qyd-j9-yyv" firstAttribute="leading" secondItem="na4-MB-IBk" secondAttribute="leading" id="y9d-V5-uV5"/>
+                <constraint firstAttribute="bottom" secondItem="S9v-TA-6ug" secondAttribute="bottom" id="yy7-4o-mak"/>
+            </constraints>
+            <point key="canvasLocation" x="-13.5" y="39.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bottom-nav-stripe.png" width="1125" height="150"/>
+        <image name="icon-appt.png" width="75" height="75"/>
+        <image name="icon-home.png" width="93" height="75"/>
+        <image name="icon-presc.png" width="72" height="72"/>
+        <image name="icon-profile.png" width="75" height="75"/>
+        <image name="icon-settings.png" width="72" height="72"/>
+        <image name="top-nav-dash.png" width="1125" height="195"/>
+        <image name="top-nav-presc.png" width="1125" height="195"/>
+    </resources>
+</document>
