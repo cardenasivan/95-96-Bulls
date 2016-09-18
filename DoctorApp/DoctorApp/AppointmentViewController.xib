@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppointmentViewController">
+            <connections>
+                <outlet property="appointmentImageView" destination="9sK-A1-bRZ" id="aJT-U8-GeM"/>
+                <outlet property="appointmentTableView" destination="OPL-nG-mf2" id="M8f-x6-GTY"/>
+                <outlet property="homeImageView" destination="W3y-lc-r2b" id="jCC-jq-HSg"/>
+                <outlet property="prescriptionImageView" destination="e7k-ka-kZh" id="Gos-Xf-Jfv"/>
+                <outlet property="profileIconImageView" destination="OyA-lm-xcl" id="nrD-Os-0jH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top-nav-appt.png" translatesAutoresizingMaskIntoConstraints="NO" id="a1u-9R-SAy"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kB9-QD-JLV">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="P4a-f4-WAt"/>
+                        <constraint firstAttribute="height" constant="24" id="fPf-Zg-vGr"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="icon-settings.png"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottom-nav-stripe.png" translatesAutoresizingMaskIntoConstraints="NO" id="As8-0k-fQb"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-profile.png" translatesAutoresizingMaskIntoConstraints="NO" id="OyA-lm-xcl">
+                    <gestureRecognizers/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-appt.png" translatesAutoresizingMaskIntoConstraints="NO" id="9sK-A1-bRZ"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-home.png" translatesAutoresizingMaskIntoConstraints="NO" id="W3y-lc-r2b">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Crh-u9-2oE"/>
+                        <constraint firstAttribute="width" constant="94" id="hdI-Ea-wX7"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-presc.png" translatesAutoresizingMaskIntoConstraints="NO" id="e7k-ka-kZh">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="XsF-eZ-ufM"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UPCOMING APPOINTMENTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9a-DQ-bRG">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="X6D-Ch-pIP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                    <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OPL-nG-mf2">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgr-cC-OgO">
+                    <color key="backgroundColor" red="0.10196078431372549" green="0.39215686274509803" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="i6n-FH-7AR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                    <state key="normal" title="Schedule an Appointment">
+                        <color key="titleColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="scheduleAppointment:" destination="-1" eventType="touchUpInside" id="Pia-Pl-FlR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="W3y-lc-r2b" firstAttribute="centerY" secondItem="As8-0k-fQb" secondAttribute="centerY" id="0Iw-dE-pVF"/>
+                <constraint firstItem="OPL-nG-mf2" firstAttribute="trailing" secondItem="As8-0k-fQb" secondAttribute="trailing" id="6dp-l0-xZv"/>
+                <constraint firstItem="9sK-A1-bRZ" firstAttribute="leading" secondItem="W3y-lc-r2b" secondAttribute="trailing" constant="90" id="7aV-XN-kTb"/>
+                <constraint firstItem="OPL-nG-mf2" firstAttribute="leading" secondItem="W3y-lc-r2b" secondAttribute="leading" id="8Eo-Ua-4ai"/>
+                <constraint firstItem="v9a-DQ-bRG" firstAttribute="top" secondItem="a1u-9R-SAy" secondAttribute="bottom" constant="17" id="8PO-9d-jcY"/>
+                <constraint firstAttribute="trailing" secondItem="kB9-QD-JLV" secondAttribute="trailing" constant="13" id="Cap-6H-ixU"/>
+                <constraint firstItem="tgr-cC-OgO" firstAttribute="centerX" secondItem="As8-0k-fQb" secondAttribute="centerX" id="H5s-KS-YmB"/>
+                <constraint firstItem="kB9-QD-JLV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="31" id="IL8-1m-aIm"/>
+                <constraint firstItem="a1u-9R-SAy" firstAttribute="trailing" secondItem="OPL-nG-mf2" secondAttribute="trailing" id="MOd-JC-b85"/>
+                <constraint firstAttribute="trailing" secondItem="v9a-DQ-bRG" secondAttribute="trailing" constant="4" id="N7X-tS-yfQ"/>
+                <constraint firstItem="OyA-lm-xcl" firstAttribute="top" secondItem="9sK-A1-bRZ" secondAttribute="top" id="OKC-NB-ulo"/>
+                <constraint firstItem="OyA-lm-xcl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="81" id="UJr-eJ-NiM"/>
+                <constraint firstItem="9sK-A1-bRZ" firstAttribute="leading" secondItem="OyA-lm-xcl" secondAttribute="trailing" constant="9" id="URI-yW-CrU"/>
+                <constraint firstItem="OyA-lm-xcl" firstAttribute="top" secondItem="tgr-cC-OgO" secondAttribute="bottom" constant="27" id="X29-Ih-HRG"/>
+                <constraint firstItem="As8-0k-fQb" firstAttribute="centerY" secondItem="9sK-A1-bRZ" secondAttribute="centerY" id="XZ3-OL-ccf"/>
+                <constraint firstItem="v9a-DQ-bRG" firstAttribute="trailing" secondItem="e7k-ka-kZh" secondAttribute="trailing" id="XkV-K1-yS8"/>
+                <constraint firstItem="tgr-cC-OgO" firstAttribute="top" secondItem="OPL-nG-mf2" secondAttribute="bottom" constant="25" id="Ymg-15-Qa6"/>
+                <constraint firstItem="tgr-cC-OgO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Zkw-E3-AUT"/>
+                <constraint firstItem="OyA-lm-xcl" firstAttribute="bottom" secondItem="9sK-A1-bRZ" secondAttribute="bottom" id="arV-pe-eXb"/>
+                <constraint firstItem="9sK-A1-bRZ" firstAttribute="top" secondItem="e7k-ka-kZh" secondAttribute="top" id="bPs-S3-Gjv"/>
+                <constraint firstItem="v9a-DQ-bRG" firstAttribute="top" secondItem="kB9-QD-JLV" secondAttribute="bottom" constant="27" id="cSe-g4-TKa"/>
+                <constraint firstItem="OPL-nG-mf2" firstAttribute="top" secondItem="v9a-DQ-bRG" secondAttribute="bottom" constant="8" symbolic="YES" id="d7V-bu-a7v"/>
+                <constraint firstItem="v9a-DQ-bRG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="eO3-vQ-sCK"/>
+                <constraint firstItem="a1u-9R-SAy" firstAttribute="leading" secondItem="OPL-nG-mf2" secondAttribute="leading" id="kMm-DB-nU8"/>
+                <constraint firstItem="a1u-9R-SAy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="m92-A3-CQb"/>
+                <constraint firstAttribute="trailing" secondItem="9sK-A1-bRZ" secondAttribute="trailing" constant="97" id="nHw-wG-sTp"/>
+                <constraint firstItem="a1u-9R-SAy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ngD-9h-tHw"/>
+                <constraint firstItem="As8-0k-fQb" firstAttribute="top" secondItem="tgr-cC-OgO" secondAttribute="bottom" constant="15" id="nl1-2R-BzO"/>
+                <constraint firstItem="9sK-A1-bRZ" firstAttribute="bottom" secondItem="e7k-ka-kZh" secondAttribute="bottom" id="pse-8S-vAc"/>
+                <constraint firstItem="W3y-lc-r2b" firstAttribute="top" secondItem="tgr-cC-OgO" secondAttribute="bottom" constant="28" id="qfR-DP-q3W"/>
+                <constraint firstItem="As8-0k-fQb" firstAttribute="leading" secondItem="W3y-lc-r2b" secondAttribute="leading" id="w03-2a-bGB"/>
+                <constraint firstAttribute="trailing" secondItem="a1u-9R-SAy" secondAttribute="trailing" id="ygt-db-wqw"/>
+                <constraint firstAttribute="bottom" secondItem="As8-0k-fQb" secondAttribute="bottom" id="ze5-Lk-05y"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bottom-nav-stripe.png" width="1125" height="150"/>
+        <image name="icon-appt.png" width="75" height="75"/>
+        <image name="icon-home.png" width="93" height="75"/>
+        <image name="icon-presc.png" width="72" height="72"/>
+        <image name="icon-profile.png" width="75" height="75"/>
+        <image name="icon-settings.png" width="72" height="72"/>
+        <image name="top-nav-appt.png" width="1125" height="195"/>
+    </resources>
+</document>

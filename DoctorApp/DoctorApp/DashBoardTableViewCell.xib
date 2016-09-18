@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DashBoardTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K67-vh-ZCT">
+                        <state key="normal" image="icon-webcam.png"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kll-qi-CbN">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="eRf-ga-o6h"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                        <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="September 17, 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSw-N8-VU4">
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:00 Am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Q2-Ze-Kew">
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Begin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFf-RG-MN4">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="m9R-2J-Qu8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="K67-vh-ZCT" firstAttribute="leading" secondItem="Kll-qi-CbN" secondAttribute="trailing" constant="3" id="6IE-ia-L3G"/>
+                    <constraint firstItem="BFf-RG-MN4" firstAttribute="top" secondItem="K67-vh-ZCT" secondAttribute="bottom" constant="3" id="OJZ-jR-DtH"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="BFf-RG-MN4" secondAttribute="bottom" constant="3.5" id="QB5-Eb-vmi"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="2Q2-Ze-Kew" secondAttribute="trailing" constant="40" id="QP3-vE-Yfc"/>
+                    <constraint firstItem="2Q2-Ze-Kew" firstAttribute="top" secondItem="DSw-N8-VU4" secondAttribute="bottom" constant="1" id="W2b-sn-WZN"/>
+                    <constraint firstItem="DSw-N8-VU4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Wc8-Q4-fBT"/>
+                    <constraint firstItem="Kll-qi-CbN" firstAttribute="trailing" secondItem="DSw-N8-VU4" secondAttribute="trailing" id="YFa-Uj-16f"/>
+                    <constraint firstItem="DSw-N8-VU4" firstAttribute="top" secondItem="Kll-qi-CbN" secondAttribute="bottom" id="Zg6-lg-jht"/>
+                    <constraint firstItem="Kll-qi-CbN" firstAttribute="leading" secondItem="DSw-N8-VU4" secondAttribute="leading" id="bTp-01-gpp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="K67-vh-ZCT" secondAttribute="trailing" constant="5" id="eoQ-x7-Q34"/>
+                    <constraint firstItem="Kll-qi-CbN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="fNT-r8-N70"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="2Q2-Ze-Kew" secondAttribute="bottom" constant="-0.5" id="gen-vK-c7a"/>
+                    <constraint firstItem="K67-vh-ZCT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="hHS-DI-Cls"/>
+                    <constraint firstItem="DSw-N8-VU4" firstAttribute="trailing" secondItem="2Q2-Ze-Kew" secondAttribute="trailing" id="lgd-c7-stS"/>
+                    <constraint firstItem="BFf-RG-MN4" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="rUU-xu-3TU"/>
+                    <constraint firstItem="Kll-qi-CbN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="sgA-5w-TQ4"/>
+                    <constraint firstItem="K67-vh-ZCT" firstAttribute="centerX" secondItem="BFf-RG-MN4" secondAttribute="centerX" id="w43-Ce-3Ug"/>
+                    <constraint firstItem="DSw-N8-VU4" firstAttribute="leading" secondItem="2Q2-Ze-Kew" secondAttribute="leading" id="xmW-bX-3yY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="DSw-N8-VU4" id="fAw-qn-pCm"/>
+                <outlet property="dayLabel" destination="Kll-qi-CbN" id="buN-yP-HCJ"/>
+                <outlet property="timeLabel" destination="2Q2-Ze-Kew" id="68u-07-pdR"/>
+                <outlet property="webCamButton" destination="K67-vh-ZCT" id="kPp-3r-o56"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-webcam.png" width="81" height="96"/>
+    </resources>
+</document>
